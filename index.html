@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />  
+        
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+      
+      
+      <style>
+        
+        .animate__animated.animate__bounceInUp {
+            --animate-duration: 3s;
+           
+          }
+        .animate__animated.animate__bounceInDown {
+            --animate-duration: 3s;
+          }
+        .animate__animated.animate__slideInRight{
+            --animate-duration: 3s;
+          }
+
+
+
+          @keyframes increaseWidth{
+            from{
+              width: 0px;
+            }
+            to{
+              width: 60px;
+            }
+          }
+
+        
+
+         
+ 
+          /* @media (max-width: 767px) {
+               .container4{
+                   display:block ;
+               }
+             } 
+            */
+         
+      </style>
+
+    </head>
+    <body class="flex flex-col ">
+      
+      <div class="  flex justify-between pt-[20px] xs:flex xs:flex-col xs:gap-2 xs:items-center tl:flex tl:flex-col tl:gap-2 tl:items-center">  
+
+          <ul class="flex gap-4 pl-[100px] text-gray-600  xs:pl-0 tl:pl-0">
+            <li><a class="hover:text-blue-600" href="#">About</a></li>
+            <li><a class="hover:text-blue-600" href="#"> Doctors</a></li>
+            <li><a class="hover:text-blue-600" href="#">Contact</a></li>
+            <li><a class="hover:text-blue-600" href="#"> FAQ</a></li>
+          </ul>
+                
+        <div class="flex gap-5 pr-[100px] xs:pr-0 tl:pr-0">
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-phone text-sm text-blue-600"></i>
+            <p class="text-sm ">+880 1234 56789</p>
+          </div>
+          <div class="flex gap-2 items-center ">
+            <i class="fa-solid fa-envelope text-sm text-blue-600"></i>
+            <a href="#" class="text-sm ">support@yourmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="pt-4">
+        <div class="h-[1px] w-full bg-gray-200"></div>
+      </div>
+<!-- ....................................................................... -->
+
+      <section id="nav" class="  z-30   bg-white flex justify-around items-center pl-[10px] pt-[20px] pb-[20px] w-full  shadow-lg">        
+          <div class="flex flex-col w-full gap-6   hidden  xs:block tl:block">
+            <div class="justify-around  flex  items-center   tl:justify-between tl:pr-2">
+              <img src="img/logo.png">
+              <i class="fa-solid fa-list btn text-2xl text-blue-600 cursor-pointer"></i>
+            </div>
+  
+            <div id="list2" class=" flex flex-col items-start pl-[150px] pt-[15px]  tl:pl-[50px]">
+             <ul  class="flex flex-col gap-2 text-start  font-semibold  ">
+              <li>
+                <div  class="flex items-center  cursor-pointer ">
+                  <a  class="hover:text-blue-600 " href="">Home</a>
+                  <i class="fa-solid fa-caret-right"></i>            
+                </div>            
+              </li>
+  
+              <li >
+                
+                  <a class="hover:text-blue-600" href="">Doctos</a>
+                            
+                
+              </li>
+  
+              <li>
+                
+                  <a class="hover:text-blue-600" href="">Services</a>
+                
+              </li>
+  
+              <li>
+                
+                  <a class="hover:text-blue-600" href="">Pages</a>
+                
+              </li>
+              <li>
+                
+                  <a class="hover:text-blue-600" href="">Blogs</a>
+                
+              </li>
+              <li>
+                
+                  <a class="hover:text-blue-600" href="">Contact Us</a>
+                
+              </li>
+            </ul>       
+            </div> 
+
+          </div>        
+          <div class="flex justify-around items-center w-full  xs:hidden tl:hidden">
+
+            <img src="img/logo.png" >
+              <ul class="flex gap-6 text-center font-semibold">
+                <li >
+                  <div id="home1" class="flex gap-4 items-center relative cursor-pointer ">
+                    <a  class="hover:text-blue-600 pl-2" href="">Home</a>
+                    <i class="fa-solid fa-caret-up"></i>
+                    <div class="bg-blue-600 w-[60px] h-1 absolute top-[55px] rounded"></div>
+                    <div id="home2" class="  absolute top-[58px] self-center z-auto bg-white w-[200px] h-[50px] text-gray-500 text-lg flex flex-col items-start pl-2 border  justify-center">
+                      <p>Home Page 1</p>
+                    </div>
+                  </div>            
+                </li>
+    
+                <li >
+                  <div id="home3"  class="relative ">
+                    <a class="hover:text-blue-600" href="">Doctos</a>
+                    <div id="home4" class="bg-blue-600 h-1 absolute top-[55px] rounded w-[10px]"></div>           
+                  </div>
+                </li>
+    
+                <li>
+                  <div id="home3" class="relative">
+                    <a class="hover:text-blue-600" href="">Services</a>
+                    <div id="home4" class="bg-blue-600 w-[60px] h-1 absolute top-[55px] rounded"></div>
+                  </div>
+                </li>
+    
+                <li>
+                  <div id="home3" class="relative">
+                    <a class="hover:text-blue-600" href="">Pages</a>
+                    <div id="home4" class="bg-blue-600 w-[60px] h-1 absolute top-[55px] rounded"></div>
+                  </div>
+                </li>
+                <li>
+                  <div id="home3" class="relative">
+                    <a class="hover:text-blue-600" href="">Blogs</a>
+                    <div id="home4" class="bg-blue-600 w-[60px] h-1 absolute top-[55px] rounded"></div>
+                  </div>
+                </li>
+                <li>
+                  <div id="home3" class="relative">
+                    <a class="hover:text-blue-600" href="">Contact Us</a>
+                    <div id="home4" class="bg-blue-600 w-[60px] h-1 absolute top-[55px] rounded"></div>
+                  </div>
+                </li>
+              </ul>       
+            <div>
+             <a  href=""><button class="bg-blue-600 text-white font-semibold h-[50px] w-[190px] rounded hover:">Book Appointment</button></a> 
+            </div>
+          </div>    
+      </section>
+       
+      
+      <!-- ........................................... -->
+
+      <div id="container" class="relative">
+
+          <div id="div3" class="relative">
+            <img class="w-full   h-[600px] xs:h-[300px] xs:opacity-50 tl:h-[300px] tl:opacity-50  " src="img/slider.jpg" >
+          
+          
+            <div id="div4" class=" absolute top-[20%] left-[100px] w-[550px]  flex flex-col gap-6 tl:left-[20px] tl:w-auto ">         
+                <h2 class="text-4xl font-extrabold text-blue-950 animate__animated  animate__bounceInUp xs:font-semibold xs:text-3xl tl:text-lg  tl:text-wrap tl:w-[300px]">We Provide<span class="text-blue-700">Medical</span> Services That You Can<span class="text-blue-700">Trust!</span></h2>
+                <p  class="text-gray-700 animate__animated  animate__bounceInUp tl:text-sm tl:text-wrap tl:w-[300px]"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam</p>          
+             <div class="flex gap-4">
+                <a href=""><button class="bg-blue-700 h-[50px] w-[150px] rounded text-white font-semibold animate__animated animate__bounceInDown">Get Appointment</button></a>
+                <a href=""><button class="bg-blue-950 h-[50px] w-[120px] rounded text-white font-semibold animate__animated animate__bounceInDown">Conatct Now</button></a>
+              </div>
+            </div>
+
+          </div>
+          
+          <div id="div3" class="relative">
+            <img class=" w-full  h-[600px] xs:h-[300px]  xs:opacity-50 tl:h-[300px] tl:opacity-50 " src="img/slider2.jpg" alt="">
+          </div> 
+          <div id="div4" class=" absolute top-[20%] left-[100px] w-[550px] flex flex-col gap-6 tl:left-[20px] tl:w-auto ">
+            <h2 class="text-4xl font-extrabold text-blue-950 animate__animated  animate__bounceInUp xs:font-semibold xs:text-3xl tl:text-lg  tl:text-wrap tl:w-[300px]">We Provide<span class="text-blue-700">Medical</span> Services That You Can<span class="text-blue-700">Trust!</span></h2>
+            <p class="text-gray-700 animate__animated  animate__bounceInUp tl:text-sm tl:text-wrap tl:w-[300px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+            <div class="flex gap-4">
+              <a href=""><button class="bg-blue-700 h-[50px] w-[150px] rounded text-white font-semibold animate__animated animate__bounceInDown">Get Appointment</button></a>
+              <a href=""><button class="bg-blue-950 h-[50px] w-[120px] rounded text-white font-semibold animate__animated animate__bounceInDown">Conatct Now</button></a>
+            </div>
+          </div>
+             
+          <div id="div3" class="relative" >
+            <img class="w-full  h-[600px] xs:h-[300px]  xs:opacity-50 tl:h-[300px] tl:opacity-50 " src="img/slider3.jpg " alt="">
+          </div>
+          <div id="div4" class="  absolute  top-[20%] left-[100px] w-[550px] flex flex-col gap-6 tl:left-[20px] tl:w-auto">
+            <h2 class="text-4xl font-extrabold text-blue-950 animate__animated  animate__bounceInUp xs:font-semibold xs:text-3xl tl:text-lg  tl:text-wrap tl:w-[300px]">We Provide<span class="text-blue-700">Medical</span> Services That You Can<span class="text-blue-700">Trust!</span></h2>
+            <p class="text-gray-700 animate__animated  animate__bounceInUp tl:text-sm tl:text-wrap tl:w-[300px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+            <div class="flex gap-4 ">
+              <a href=""><button class="bg-blue-700 h-[50px] w-[150px] rounded text-white font-semibold animate__animated animate__bounceInDown">Get Appointment</button></a>
+              <a href=""><button class="bg-blue-950 h-[50px] w-[120px] rounded text-white font-semibold animate__animated animate__bounceInDown">Conatct Now</button></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ......................................................... -->
+
+        <div class="flex justify-center gap-[50px] mt-[-200px] z-0 xs:flex-col xs:items-center xs:mt-10 tl:flex-col tl:items-center tl:mt-10 ">
+          <div class="w-[350px] h-[290px] bg-blue-600 rounded transition-all duration-500 ease-in-out hover:-translate-y-7 xs:w-[500px] xs:h-[230px] xs:pb-[250px] tl:h-[335px] tl:w-[300px]">
+            <div class="p-[30px] flex flex-col gap-[20px] font-semibold text-gray-100">
+              <p>Lorem Amet</p>
+              <h2 class="text-2xl font-bold text-white">Emergency Cases</h2>
+              <p >Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+              <div class=" flex gap-5 items-center">
+                <a href="">LEARN MORE</a>
+                <i class="fa-solid fa-arrow-right cursor-pointer"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[350px] h-[290px] bg-blue-600 rounded transition-all duration-500 ease-in-out hover:-translate-y-7 xs:w-[500px] xs:h-[230px] xs:pb-[250px] tl:h-[335px] tl:w-[300px] ">
+            <div class="p-[30px] flex flex-col gap-[20px] font-semibold text-gray-100">
+              <p>Lorem Amet</p>
+              <h2 class="text-2xl font-bold text-white xs:text-lg xs:font-normal">Emergency Cases</h2>
+              <p >Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+              <div class=" flex gap-5 items-center">
+                <a href="">LEARN MORE</a>
+                <i class="fa-solid fa-arrow-right cursor-pointer"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[350px] h-[290px] bg-blue-600 rounded transition-all duration-500 ease-in-out hover:-translate-y-7 xs:w-[500px] xs:h-[230px] xs:pb-[250px] tl:h-[335px] tl:w-[300px] ">
+            <div class="p-[30px] flex flex-col gap-[20px] font-semibold text-gray-100">
+              <p>Lorem Amet</p>
+              <h2 class="text-2xl font-bold text-white">Emergency Cases</h2>
+              <p >Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+              <div class=" flex gap-5 items-center">
+                <a href="">LEARN MORE</a>
+                <i class="fa-solid fa-arrow-right cursor-pointer"></i>
+              </div>
+            </div>
+          </div>         
+        </div>
+        <!-- ...................................................... -->
+         <div id="container2" class="flex fixed top-[150px] right-[0px] z-20 tl:fixed tl:top-[165px] tl:right-0">
+          <div> <button id="btn1" class="bg-blue-700 text-white font-semibold w-[80px] h-[40px] rounded tl:w-[60px]">Get Pro</button></div>
+          <ul id="list" class="flex flex-col  gap-3 w-[300px] p-[30px] bg-white shadow-lg shadow-gray-3000 ">
+            <li><p class="text-blue-600 font-semibold  text-wrap w-[200px]">Pro Version Available on Themeforest</p></li>
+            <li><p class="text-blue-600 font-semibold">Pro Version Features</p></li>
+            <li><p class="text-gray-700">2+ premade home pages</p></li>
+            <li><p class="text-gray-700">20+ html pages</p></li>
+            <li><p class="text-gray-700">Color Plate With 12+ Colors</p></li>
+            <li><p class="text-gray-700">Sticky Header / Sticky Filters</p></li>
+            <li><p class="text-gray-700">Working Contact Form With Google Map</p></li>
+            <li><button class="text-white font-semibold h-[50px] w-[200px] bg-blue-600 rounded">Pro Version Demo</button></li>
+            <li><button class="text-white font-semibold h-[50px] w-[200px] bg-blue-600 rounded">Buy Pro Version</button></li>
+          </ul>
+         </div>
+        <!-- ......................................................... -->
+
+         <div class="text-center flex flex-col gap-4  items-center xs:gap-[50px] tl:gap-[50px]">        
+          <div class="  flex flex-col items-center gap-4 pt-[50px]">
+            <h2 class="text-4xl text-wrap w-[700px] font-bold text-blue-950 xs:text-2xl xs:w-[500px] tl:w-[330px] tl:text-xl">We Are Always Ready to Help You & Your Family</h2>          
+              <img src="img/section-img.png " alt="">          
+            <p class="text-gray-600 text-xl  text-wrap w-[650px] xs:text-sm tl:w-[350px] tl:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+          </div>
+
+          <div class="flex xs:flex-col xs:gap-4 tl:flex-col  tl:gap-4">
+            <div class=" flex flex-col gap-4 items-center">
+              <div class=" rounded-full border w-[100px] h-[100px] flex justify-center items-center  transition-all duration-500 ease-in-out  text-blue-600 text-2xl hover:bg-blue-600 hover:text-white xs:w-[80px] xs:h-[60px] tl:w-[80px]  tl:h-[80px]">
+                <i class="fa-solid fa-truck-medical text-4xl xs:text-2xl tl:text-3xl"></i>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-gray-950">Emergency Help</h2>               
+              </div>
+              <div>
+                <p class="text-gray-500  text-wrap w-[310px] xs:w-[450px] tl:w-[330px]">Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+              </div>
+            </div>
+            <div class="text-blue-700 pt-[2%] text-xl xs:hidden tl:hidden">...............................</div>       
+            
+            <div class=" flex flex-col gap-4 items-center">
+              <div class=" rounded-full border w-[100px] h-[100px] flex justify-center items-center transition-all duration-500 ease-in-out  text-blue-600 text-2xl hover:bg-blue-600 hover:text-white xs:w-[80px] xs:h-[80px] tl:w-[80px]  tl:h-[80px]">
+                <i class="fa-solid fa-notes-medical text-4xl xs:text-2xl tl:text-3xl"></i>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-gray-950">Enriched Pharmecy</h2>               
+              </div>
+              <div>
+                <p class="text-gray-500  text-wrap w-[310px] xs:w-[450px] tl:w-[330px]">Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+              </div>
+            </div>
+            <div class="text-blue-700 pt-[2%] text-xl xs:hidden tl:hidden">...............................</div>       
+           
+            <div class=" flex flex-col gap-4 items-center">
+              <div class=" rounded-full border w-[100px] h-[100px] flex justify-center items-center transition-all duration-500 ease-in-out  text-blue-600 text-2xl hover:bg-blue-600 hover:text-white xs:w-[80px] xs:h-[80px] tl:w-[80px]  tl:h-[80px]">
+                <i class="fa-solid fa-stethoscope text-4xl xs:text-2xl tl:text-3xl"></i>
+              </div>
+              <div>
+                <h2 class="text-xl font-semibold text-gray-950">Medical Treatment</h2>               
+              </div>
+              <div>
+                <p class="text-gray-500  text-wrap w-[310px] xs:w-[450px] tl:w-[330px]">Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+              </div>
+            </div>
+         </div>
+         <!-- .............................................. -->
+          <div class="relative xs:h-fit tl:h-fit">
+            <img   src="img/fun-bg.jpg" class="xs:h-[1000px] tl:h-[600px]" >
+            <div class="absolute inset-0  bg-blue-500 opacity-[0.8] xs:opacity-[0.9]  tl:opacity-[0.9] "> </div>
+
+            <section id="sec1" class="absolute top-[40%] flex  w-full justify-center gap-[100px]   xs:flex-col xs:items-center xs:gap-[50px] xs:top-[10%]  tl:flex-col tl:items-center tl:gap-[50px] tl:top-[10%]">
+              <div class="flex gap-[30px] xs:flex-col xs:items-center tl:items-center tl:w-full tl:justify-center ">
+                <div class=" rounded-full border w-[70px] h-[70px] flex justify-center items-center  text-white  text-2xl  hover:bg-white hover:text-blue-600">
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" /></svg>            
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div id="num" data-goal="3468" class="text-4xl font-bold text-white">0</div>
+                  <div><p class="text-white">Hospital Rooms</p></div>
+                </div>
+              </div>
+    
+              <div class="flex gap-[20px] xs:flex-col xs:items-center tl:items-center  tl:w-full tl:justify-center ">
+                <div class=" rounded-full border w-[70px] h-[70px] flex justify-center items-center  text-white  text-2xl  hover:bg-white hover:text-blue-600">
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" /><path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" /></svg>                </div>
+                <div class="flex flex-col gap-2">
+                  <div id="num" data-goal="557" class="text-4xl font-bold text-white">0</div>
+                  <div><p class="text-white">Specialist Doctors</p></div>
+                </div>
+              </div>
+    
+              <div class="flex gap-[35px] xs:flex-col xs:items-center tl:items-center  tl:w-full tl:justify-center ">
+                <div class=" rounded-full border w-[70px] h-[70px] flex justify-center items-center  text-white  text-2xl  hover:bg-white hover:text-blue-600">
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mood-happy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 9l.01 0" /><path d="M15 9l.01 0" /><path d="M8 13a4 4 0 1 0 8 0h-8" /></svg>  
+                  </div>
+                <div class="flex flex-col gap-2">
+                  <div id="num" data-goal="4379" class="text-4xl font-bold text-white">0</div>
+                  <div><p class="text-white">Happy Patients</p></div>
+                </div>
+              </div>
+    
+              <div class="flex gap-3 xs:flex-col xs:items-center tl:items-center  tl:w-full tl:justify-center ">
+                <div class=" rounded-full border w-[70px] h-[70px] flex justify-center items-center  text-white  text-2xl  hover:bg-white hover:text-blue-600">
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-calendar-month"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M7 14h.013" /><path d="M10.01 14h.005" /><path d="M13.01 14h.005" /><path d="M16.015 14h.005" /><path d="M13.015 17h.005" /><path d="M7.01 17h.005" /><path d="M10.01 17h.005" /></svg> 
+                </div>
+                <div class="flex flex-col gap-2">
+                  <div id="num" data-goal="32" class="text-4xl font-bold text-white">0</div>
+                  <div><p class="text-white">Years of Experience</p></div>
+                </div>
+              </div>
+             </section>
+          </div>
+          <!-- ............................................................ -->
+           
+          <div class="  flex flex-col items-center gap-4 pt-[100px] xs:pt-[20px]">
+            <h2 class="text-4xl text-wrap w-[700px] font-bold text-blue-950 xs:text-2xl xs:w-[450px] tl:text-2xl tl:w-[350px]">We Offer Different Services To Improve Your Health</h2>          
+              <img src="img/section-img.png " alt="">          
+            <p class="text-gray-600   text-xl text-wrap w-[650px] xs:text-sm xs:w-[450px] tl:text-sm tl:w-[330px]">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+          </div>
+          <!-- ................................................................. -->
+
+            <div class="w-full justify-center gap-[10px] items-center pt-[50px] flex pb-[100px] xs:flex-col xs:items-center xs:gap-5 tl:flex-col tl:items-center tl:gap-5">
+
+              <div class="flex flex-col">
+                <div class=" text-start flex flex-col gap-5">
+                  <h2 class="text-blue-950 font-bold text-3xl xs:text-2xl tl:text-xl">Who We Are</h2>
+                  <div class="bg-blue-600 h-[0.5px] w-[50px] "></div>
+                  <p class="text-gray-600  text-wrap  w-[600px] xs:w-[480px] tl:text-sm tl:w-[330px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo.</p>
+                  <p class="text-gray-600  text-wrap   tl:text-sm tl:w-[330px]">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+
+                <div class="flex gap-[20px] pt-[50px] xs:flex-col tl:flex-col">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex gap-2 items-center ">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="15"  height="15"  viewBox="0 0 24 24"  fill="blue"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
+                      <p class="text-gray-600">Maecenas vitae luctus nibh.</p>
+                    </div>
+                    <div class="flex gap-2 items-center ">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="15"  height="15"  viewBox="0 0 24 24"  fill="blue"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
+                      <p class="text-gray-600 ">Aliquam feugiat interdum.</p>
+                    </div>
+                    <div class="flex gap-2 items-center ">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="15"  height="15"  viewBox="0 0 24 24"  fill="blue"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
+                      <p class="text-gray-600">Duis massa massa.</p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-2">
+                    <div class="flex gap-2 items-center ">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="15"  height="15"  viewBox="0 0 24 24"  fill="blue"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
+                      <p class="text-gray-500">Maecenas vitae luctus nibh.</p>
+                    </div>
+                    <div class="flex gap-2 items-center ">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="15"  height="15"  viewBox="0 0 24 24"  fill="blue"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
+                      <p class="text-gray-500">Aliquam feugiat interdum.</p>
+                    </div>
+                    <div class="flex gap-2 items-center ">
+                      <svg  xmlns="http://www.w3.org/2000/svg"  width="15"  height="15"  viewBox="0 0 24 24"  fill="blue"  class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" /></svg>
+                      <p class="text-gray-500">Duis massa massa.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+                <div>
+                  <img class="w-[540px] h-[358px] tl:w-[300px] tl:h-[300px]" src="img/video-bg.jpg" alt="">
+                </div>             
+            </div>
+            
+<!-- .................................................................................... -->
+                <div class="relative h-[400px] w-full " >                
+                  <img class="absolute inset-0 w-full h-full object-cover" src="img/call-bg.jpg" alt="">
+                  <div class="absolute inset-0 opacity-55 bg-blue-600 "></div>
+                  <div class="absolute top-[120px] left-[30%] flex flex-col  items-center gap-5 xs:left-[15%] tl:items-start tl:pl-2 tl:left-[10px] tl:top-[20%]">
+                    <h2 class="text-white text-4xl font-semibold text-wrap w-[550px] xs:text-3xl xs:w-[450px] tl:w-[330px] tl:text-2xl">Do you need Emergency Medical Care? Call @ 1234 56789</h2>
+                    <p class="text-white  text-wrap w-[550px] tl:w-[300px] tl:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p>
+                    <div class="flex gap-2 justify-center">
+                      <a class="w-[200px] p-3 bg-white rounded border  text-blue-700 font-semibold hover:bg-black transition-all duration-500 ease-in-out xs:w-[150px] tl:w-[150px]" href="">Contact Now</a>
+                      <a class="w-[200px] p-3 rounded border text-white font-semibold hover:bg-black transition-all duration-500 ease-in-out xs:w-[150px] tl:w-[150px]" href="">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+         <!-- ........................................................ -->
+                  
+          <div class="  flex flex-col items-center gap-4 pt-[100px]">
+            <h2 class="text-4xl text-wrap w-[700px] font-bold text-blue-950 xs:text-2xl xs:w-[550px] tl:w-[350px] tl:text-2xl">We Maintain Cleanliness Rules Inside Our Hospital</h2>          
+              <img src="img/section-img.png " alt="">          
+            <p class="text-gray-600   text-xl text-wrap w-[650px] xs:text-sm xs:w-[450px] tl:w-[330px] tl:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+          </div>
+         <!-- ....................................................................... -->
+          <div class="flex justify-around  w-full pt-[50px] img  xs:flex-col xs:items-center tl:gap-6  tl:flex-col tl:items-center xs:gap-6">
+
+            <div id="divs" class="relative">
+              <img src="img/pf1.jpg">
+              <div id="hoverer" class="absolute inset-0 transition-all duration-500 ease-in-out hover:bg-blue-600 opacity-50 hidden"></div>
+              <a href="" class="absolute top-[40%] left-[70px]  text-blue-700 font-semibold text-lg  w-[180px] p-[10px] rounded bg-white  hidden">view details</a>     
+            </div>
+
+            <div id="divs" class="relative">
+              <img src="img/pf2.jpg">
+              <div id="hoverer" class="absolute inset-0 transition-all duration-500 ease-in-out hover:bg-blue-600 opacity-50 hidden"></div>
+              <a href="" class="absolute top-[40%] left-[70px]  text-blue-700 font-semibold text-lg  w-[180px] p-[10px] rounded bg-white hidden">view details</a>     
+            </div>
+
+            <div id="divs" class="relative">
+              <img src="img/pf3.jpg">
+              <div id="hoverer" class="absolute inset-0 transition-all duration-500 ease-in-out hover:bg-blue-600 opacity-50 hidden"></div>
+              <a href="" class="absolute top-[40%] left-[70px]  text-blue-700 font-semibold text-lg  w-[180px] p-[10px] rounded bg-white hidden">view details</a>     
+
+            </div>
+            <div id="divs" class="relative">
+              <img src="img/pf4.jpg">   
+              <div id="hoverer" class="absolute inset-0 transition-all duration-500 ease-in-out hover:bg-blue-600 opacity-50 hidden"></div>
+              <a href="" class="absolute top-[40%] left-[70px]  text-blue-700 font-semibold text-lg  w-[180px] p-[10px] rounded bg-white hidden">view details</a>     
+            </div>
+          </div>
+
+          <!-- ......................................................................................... -->
+
+               <div class="  flex flex-col items-center gap-4 pt-[100px]">
+            <h2 class="text-4xl text-wrap w-[700px] font-bold text-blue-950 xs:text-2xl xs:w-[450px] tl:text-2xl tl:w-[350px]">We Offer Different Services To Improve Your Health</h2>          
+              <img src="img/section-img.png " alt="">          
+            <p class="text-gray-600   text-xl text-wrap w-[650px] xs:text-sm xs:w-[450px] tl:text-sm tl:w-[330px]">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+          </div>
+          <!-- ............................................................................................ -->
+
+           <div class="flex justify-center gap-14 w-full pt-[100px] pb-[100px] xs:flex-col xs:items-start xs:pl-[150px] xs:pt-[30px] xs:pb-[0px] tl:flex-col tl:items-end  tl:pl-[150px] tl:pt-[30px] tl:pb-[0px]">
+
+            <div class="flex flex-col gap-14">
+              <div class="flex gap-7 ">
+                <i class="fa-solid fa-prescription-bottle text-5xl text-blue-700"></i> 
+                <div class="flex flex-col gap-3  items-start">
+                  <h1 class="text-blue-950 text-2xl font-semibold hover:text-blue-600 cursor-pointer">General Treatment</h1>
+                  <p class="text-gray-500 text-start text-wrap w-[250px] text-lg xs:w-[420px] xs:text-sm tl:w-[250px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-7 ">
+                <i class="fa-solid fa-ear-deaf text-5xl text-blue-700"></i>
+                <div class="flex flex-col gap-3  items-start">
+                  <h1 class="text-blue-950 text-2xl font-semibold hover:text-blue-600 cursor-pointer">Ear Treatment</h1>
+                  <p class="text-gray-500 text-start text-wrap w-[250px] text-lg xs:w-[420px] xs:text-sm tl:w-[250px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.</p>
+                </div>
+              </div>                                   
+            </div>
+
+            <div class="flex flex-col gap-14">
+              <div class="flex gap-7 ">
+                <i class="fa-solid fa-tooth text-5xl text-blue-700"></i> 
+                <div class="flex flex-col gap-3  items-start">
+                  <h1 class="text-blue-950 text-2xl font-semibold hover:text-blue-600 cursor-pointer">Teeth Whitening</h1>
+                  <p class="text-gray-500 text-start text-wrap w-[250px] text-lg xs:w-[420px] xs:text-sm tl:w-[250px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-7 ">
+                <i class="fa-solid fa-eye text-5xl text-blue-700"></i>
+                <div class="flex flex-col gap-3  items-start">
+                  <h1 class="text-blue-950 text-2xl font-semibold hover:text-blue-600 cursor-pointer">Vision Problems</h1>
+                  <p class="text-gray-500 text-start text-wrap w-[250px] text-lg xs:w-[420px] xs:text-sm tl:w-[250px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.</p>
+                </div>
+              </div>                                   
+            </div>
+
+            <div class="flex flex-col gap-14">
+              <div class="flex gap-7 ">
+                <i class="fa-solid fa-heart-pulse  text-5xl text-blue-700"></i>
+                <div class="flex flex-col gap-3  items-start">
+                  <h1 class="text-blue-950 text-2xl font-semibold hover:text-blue-600 cursor-pointer">Heart Surgery</h1>
+                  <p class="text-gray-500 text-start text-wrap w-[250px] text-lg xs:w-[420px] xs:text-sm tl:w-[250px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-7 ">
+                <i class="fa-solid fa-droplet text-5xl text-blue-700"></i>
+                <div class="flex flex-col gap-3  items-start">
+                  <h1 class="text-blue-950 text-2xl font-semibold hover:text-blue-600 cursor-pointer">Blood Transfusion</h1>
+                  <p class="text-gray-500 text-start text-wrap w-[250px] text-lg xs:w-[420px] xs:text-sm tl:w-[250px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet.</p>
+                </div>
+              </div>                                   
+            </div>
+           </div>
+          <!-- ......................................................................................... -->
+
+           <div class="w-full bg-gray-50 flex flex-col gap-[50px] pb-[150px] xs:pb-[50px] tl:pb-[50px]">
+
+             <div class="  flex flex-col items-center gap-4 pt-[100px]">
+               <h2 class="text-4xl text-wrap w-[700px] font-bold text-blue-950 xs:text-2xl xs:w-[450px] tl:w-[350px] tl:text-xl">We Provide You The Best Treatment In Resonable Price</h2>          
+                 <img src="img/section-img.png " alt="">          
+               <p class="text-gray-600   text-xl text-wrap w-[650px] xs:text-sm xs:w-[450px] tl:w-[330px] tl:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+             </div>
+
+             <div class="flex  w-full justify-center gap-[50px] xs:flex-col xs:items-center tl:flex-col tl:items-center">
+
+              <div class="border bg-white  w-[400px] h-[600px] flex flex-col p-[20px] gap-[50px] justify-center  xs:w-[510px] xs:h-[555px] xs:p-[100px]  tl:w-[300px] tl:p-[50px]">
+                <i class="fa-solid fa-scissors text-6xl text-blue-600"></i>
+                <div>
+                  <h1 class="text-blue-950 text-2xl font-semibold">Plastic Suggery</h1>
+                  <p class=" text-gray-500"><span class="text-blue-600 text-5xl font-semibold ">$199</span>/ Per Visit</p>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center">
+                  <div class="flex items-center w-full  justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Lorem ipsum dolor sit</p>
+                    <i class="fa-solid fa-circle-check text-blue-600"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Cubitur sollicitudin fentum</p>
+                    <i class="fa-solid fa-circle-check text-blue-600"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Nullam interdum enim</p>
+                    <i class="fa-solid fa-circle-xmark text-gray-500"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Donec ultricies metus</p>
+                    <i class="fa-solid fa-circle-xmark text-gray-500"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Pellentesque eget nibh</p>
+                    <i class="fa-solid fa-circle-xmark text-gray-500"></i>
+                  </div>               
+                </div>
+                <button class=" bg-blue-600 w-[300px] p-[15px] self-center text-white font-semibold text-lg rounded transition-all ease-in-out duration-200  hover:-translate-y-2  tl:w-[270px]"> Book Now</button>
+              </div>
+
+
+
+
+              <div class="border bg-white w-[400px] h-[600px] p-[20px] flex flex-col gap-[50px] justify-center  xs:w-[510px] xs:h-[555px] xs:p-[100px] tl:w-[300px] tl:p-[50px]">
+                    <i class="fa-solid fa-heart-pulse  text-6xl text-blue-700"></i>
+                <div>
+                  <h1 class="text-blue-950 text-2xl font-semibold">Plastic Suggery</h1>
+                  <p class=" text-gray-500"><span class="text-blue-600 text-5xl font-semibold ">$199</span>/ Per Visit</p>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center ">
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Lorem ipsum dolor sit</p>
+                    <i class="fa-solid fa-circle-check text-blue-600"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Cubitur sollicitudin fentum</p>
+                    <i class="fa-solid fa-circle-check text-blue-600"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Nullam interdum enim</p>
+                    <i class="fa-solid fa-circle-xmark text-gray-500"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Donec ultricies metus</p>
+                    <i class="fa-solid fa-circle-xmark text-gray-500"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Pellentesque eget nibh</p>
+                    <i class="fa-solid fa-circle-xmark text-gray-500"></i>
+                  </div>               
+                </div>
+                <button class=" bg-blue-600 w-[300px] p-[15px] self-center text-white font-semibold text-lg rounded transition-all ease-in-out duration-200  hover:-translate-y-2 tl:w-[270px]"> Book Now</button>
+              </div>
+
+
+
+              <div class="border bg-white  w-[400px] h-[600px] p-[20px]  flex flex-col gap-[50px] justify-center  xs:w-[510px] xs:h-[555px] xs:p-[100px] tl:w-[300px] tl:p-[50px]">
+                <i class="fa-solid fa-tooth text-6xl text-blue-700"></i> 
+                <div>
+                  <h1 class="text-blue-950 text-2xl font-semibold">Plastic Suggery</h1>
+                  <p class=" text-gray-500"><span class="text-blue-600 text-5xl font-semibold ">$199</span>/ Per Visit</p>
+                </div>
+
+                <div class="flex flex-col gap-2 items-center">
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Lorem ipsum dolor sit</p>
+                    <i class="fa-solid fa-circle-check text-blue-600"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Cubitur sollicitudin fentum</p>
+                    <i class="fa-solid fa-circle-check text-blue-600"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Nullam interdum enim</p>
+                    <i class="fa-solid fa-circle-xmark text-gray-500"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between  xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Donec ultricies metus</p>
+                    <i class="fa-solid fa-circle-xmark text-gray-500"></i>
+                  </div>
+                  <div class="flex items-center w-full justify-between xs:w-[400px] tl:w-[270px]">
+                    <p class="text-gray-500 text-lg">Pellentesque eget nibh</p>
+                    <i class="fa-solid fa-circle-xmark text-gray-500"></i>
+                  </div>               
+                </div>
+                <button class=" bg-blue-600 w-[300px] p-[15px] self-center text-white font-semibold text-lg rounded transition-all ease-in-out duration-200  hover:-translate-y-2  tl:w-[270px]"> Book Now</button>
+              </div>
+
+
+             </div>
+
+           </div>
+          <!-- ............................................................................................ -->
+
+           <div class="flex flex-col gap-[50px] pb-[100px] ">
+
+             <div class="  flex flex-col items-center gap-4 pt-[100px]">
+               <h2 class="text-4xl text-wrap w-[700px] font-bold text-blue-950 xs:text-2xl xs:w-[450px] tl:w-[350px] tl:text-xl">We Provide You The Best Treatment In Resonable Price</h2>          
+                 <img src="img/section-img.png " alt="">          
+               <p class="text-gray-600   text-xl text-wrap w-[650px] xs:text-sm xs:w-[450px] tl:w-[330px] tl:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+             </div>
+
+             <div class=" flex  w-full justify-center gap-[50px] xs:flex-col xs:items-center tl:flex-col tl:items-center">
+              <div class="flex flex-col gap-[50px] border ">
+
+                <img class="h-[235px] xs:w-[510px] xs:h-[341px] tl:w-[350px]" src="img/blog1.jpg" alt="">
+
+                <div class="text-start flex flex-col gap-2 pr-[30px] pl-[30px] tl:pr-2 tl:pl-2 ">
+                  <p class=" bg-blue-600  text-white font-semibold w-[150px]  rounded p-2 text-lg  ">22 Aug, 2020</p>
+                  <h2 class="text-blue-950 w-[350px] text-2xl  font-semibold  tl:w-[300px]">We have annnocuced our new product.</h2>
+                  <p class="text-lg text-wrap w-[350px] text-gray-400 xs:pb-[30px] tl:pb-[30px]  tl:w-[300px]">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+                </div>
+              </div>
+
+
+              <div class="flex flex-col gap-[50px] border ">
+
+                <img class="h-[235px] xs:w-[510px] xs:h-[341px] tl:w-[350px]" src="img/blog2.jpg" alt="">
+
+                <div class="text-start flex flex-col gap-2 pr-[30px] pl-[30px]  tl:pr-2 tl:pl-2 ">
+                  <p class=" bg-blue-600  text-white font-semibold w-[150px]  rounded p-2 text-lg ">22 Aug, 2020</p>
+                  <h2 class="text-blue-950 w-[350px] text-2xl  font-semibold tl:w-[300px]">We have annnocuced our new product.</h2>
+                  <p class="text-lg text-wrap w-[350px] text-gray-400 xs:pb-[30px]  tl:pb-[30px]  tl:w-[300px]">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+                </div>
+              </div>
+
+
+              <div class="flex flex-col gap-[50px] border ">
+
+                <img class="h-[235px] xs:w-[510px] xs:h-[341px] tl:w-[350px]" src="img/blog3.jpg" alt="">
+
+                <div class="text-start flex flex-col gap-2 pr-[30px] pl-[30px] tl:pr-2 tl:pl-2 ">
+                  <p class=" bg-blue-600  text-white font-semibold w-[150px]  rounded p-2 text-lg ">22 Aug, 2020</p>
+                  <h2 class="text-blue-950 w-[350px] text-2xl  font-semibold tl:w-[300px]">We have annnocuced our new product.</h2>
+                  <p class="text-lg text-wrap w-[350px] text-gray-400 xs:pb-[30px] tl:pb-[30px]  tl:w-[300px]">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+                </div>
+              </div>
+             </div>
+           </div>
+        <!-- ................................................................. -->
+
+        <div class="relative w-full h-[250px] xs:h-[600px] tl:h-[600px]">
+          <img class="inset-0 w-full h-full  object-cover" src="img/client-bg.jpg " alt="">
+          <div class="absolute inset-0 bg-blue-600 opacity-[0.8] "></div>
+          <div class="absolute top-[40%] flex w-full  justify-center gap-[70px] xs:flex-col xs:items-center xs:top-[10%] tl:flex-col tl:items-center tl:top-[10%]">
+            <img class="w-[130px]" src="img/client1.png" alt="">
+            <img class="w-[130px]" src="img/client2.png" alt="">
+            <img class="w-[130px]" src="img/client3.png" alt="">
+            <img class="w-[130px]" src="img/client4.png" alt="">
+            <img class="w-[130px]" src="img/client5.png" alt=""> 
+          </div>
+        </div>
+         <!-- ......................................................................................... -->
+          <div class="flex flex-col pb-[80px] ">
+            
+            <div class="  flex flex-col items-center gap-4 pt-[100px] xs:pt-[50px]">
+             <h2 class="text-4xl text-wrap w-[700px] font-bold text-blue-950 xs:text-2xl xs:w-[450px] tl:w-[350px] tl:text-xl">We Are Always Ready to Help You. Book An Appointment</h2>          
+               <img src="img/section-img.png " alt="">          
+             <p class="text-gray-600   text-xl text-wrap w-[650px] xs:text-sm xs:w-[450px] tl:w-[330px] tl:text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+           </div>
+
+
+           <div class="flex flex-row-reverse gap-[50px]  items-start pt-[100px] xs:flex-col-reverse xs:items-center xs:pt-[20px] tl:flex-col-reverse tl:items-center tl:pt-[20px]">
+  
+             <img  src="img/contact-img.png">
+
+             <div class="flex flex-col gap-4">
+              <div>
+                <div class="flex gap-[40px] pt-[50px] xs:flex-col xs:gap-1 tl:flex-col tl:gap-1 tl:pl-2 tl:pr-2">
+
+                  <form class="flex flex-col w-fit gap-2 xs:w-full tl:w-full">
+                    <input type="text" placeholder="Name" class="border w-[250px] h-[50px]  rounded pr-2 pl-4 font-semibold text-gray-500 text-lg xs:w-full tl:w-full">
+                    <input type="text" placeholder="Phone" class="border w-[250px] h-[50px]  rounded pr-2 pl-4 font-semibold text-gray-500 text-lg xs:w-full tl:w-full">
+   
+                    <div id="div5" class="border w-[250px] h-[50px] rounded pr-2 pl-4 font-semibold text-gray-500 text-xl flex flex-row-reverse justify-between items-center  shadow-inner cursor-pointer xs:w-full tl:w-full">
+                      <i class="fa-solid fa-caret-up"></i>
+                      <p id="paragraph1" class="text-lg opacity-50">Doctor</p>
+                    </div>
+                    
+                    <div class="relative">
+                      <ul class="list  self-start flex flex-col absolute bg-white gap-1 items-start w-full  text-gray-500 border rounded" style="z-index: 10">                 
+                        <div class=" h-[50px] w-full cursor-pointer hover:bg-blue-400 flex flex-col items-start justify-center">
+                         <li class="pl-4 text-gray-500 text-lg opacity-50">Doctor</li>
+                       </div>
+   
+                        <div class=" h-[50px] w-full cursor-pointer  hover:bg-blue-400 flex flex-col items-start justify-center">
+                         <li class="pl-4 text-gray-500 text-lg opacity-50">Dr. Akther Hossain</li>
+                       </div>
+   
+                        <div class=" h-[50px] w-full cursor-pointer hover:bg-blue-400 flex flex-col items-start justify-center">
+                         <li class="pl-4 text-gray-500 text-lg opacity-50">Dr. Dery Alex</li>
+                       </div>
+   
+                        <div class=" h-[50px] w-full cursor-pointer hover:bg-blue-400 flex flex-col items-start justify-center">
+                         <li class="pl-4 text-gray-500 text-lg opacity-50">Dr. Jovis Karon</li>
+                       </div>
+                      </ul>
+                    </div>
+                    
+                    </form>
+
+                  <form class="flex flex-col w-fit gap-2 xs:w-full tl:w-full">
+                  
+                      <input type="email" placeholder="Email" class="border w-[250px] h-[50px]  rounded pr-2 pl-4 font-semibold text-gray-500 text-lg xs:w-full tl:w-full">                 
+                      <input type="text" id="datepicker" placeholder="Date" class="border w-[250px] h-[50px]  rounded pr-2 pl-4 font-semibold text-gray-500 text-lg xs:w-full tl:w-full">                  
+                     
+
+                    <div id="div6" class="border w-[250px] h-[50px] rounded pr-2 pl-4 font-semibold text-gray-500 text-xl flex flex-row-reverse justify-between items-center  shadow-inner cursor-pointer xs:w-full tl:w-full">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <p id="paragraph2" class="text-lg opacity-50">Department</p>                       
+                      </div>
+                      
+                      <div class="relative">
+                        <ul id="list1" style="z-index: 10" class="self-start flex flex-col absolute w-full  bg-white  gap-1 items-start   text-gray-500 border rounded">
+                        
+                          <div class=" h-[50px] w-full cursor-pointer hover:bg-blue-400 flex flex-col items-start justify-center">
+                           <li class="pl-4 text-gray-500 text-lg opacity-50">Department</li>
+                         </div>
+    
+                          <div class=" h-[50px] w-full cursor-pointer  hover:bg-blue-400 flex flex-col items-start justify-center">
+                           <li class="pl-4 text-gray-500 text-lg opacity-50">Cardiac Clinic</li>
+                         </div>
+    
+                          <div class=" h-[50px] w-full cursor-pointer hover:bg-blue-400 flex flex-col items-start justify-center">
+                           <li class="pl-4 text-gray-500 text-lg opacity-50">Neurology</li>
+                         </div>
+    
+                         <div class=" h-[50px] w-full cursor-pointer hover:bg-blue-400 flex flex-col items-start justify-center">
+                          <li class="pl-4 text-gray-500 text-lg opacity-50">Dentistry</li>
+                        </div>
+   
+                         <div class=" h-[50px] w-full cursor-pointer hover:bg-blue-400 flex flex-col items-start justify-center">
+                          <li class="pl-4 text-gray-500 text-lg opacity-50">Gastroenterology</li>
+                        </div>
+                         
+                        </ul>
+                      </div>
+
+                      </form>    
+                </div>
+              </div>
+
+              <div class=" tl:pl-2 tl:pr-2">
+                <textarea class="z-0 w-full p-4 h-[250px] rounded border" name="message" placeholder="Write Your Message Here..... "></textarea>           
+              </div>
+              <div class="flex gap-4  items-center tl:flex-col tl:items-center">
+                <button class="bg-blue-600 text-white font-semibold h-[50px] w-[190px] rounded hover:">Book Appointment</button> 
+                <p class="text-gray-500 text-lg font-semibold"> (We will be confirm by an Text Message)</p>
+              </div>              
+              </div>            
+           </div>      
+          </div>
+        <!-- ............................................................................................ -->
+
+          <div class="h-[400px] bg-blue-100  w-full  flex justify-center gap-[50px] items-center  xs:flex-col xs:items-center tl:flex-col tl:items-center">
+            <div class="text-start flex flex-col  gap-2 justify-center flex-wrap w-[450px] xs:text-center tl:text-center tl:w-[330px] tl:text-sm">
+
+              <h2 class="text-blue-950 font-semibold text-xl ">Sign up for newsletter</h2>
+              <p class=" text-gray-500">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,
+                homero alterum.</p>
+            
+            </div>
+            <div class="flex gap-2 xs:flex-col xs:items-center tl:flex-col tl:items-center w-[500px] tl:w-[350px]">
+              <input type="email" placeholder="Your email address" class="border h-[60px] w-[300px] pl-4 rounded xs:w-full tl:w-full" >
+              <button class="bg-blue-600 text-white font-semibold h-[60px] w-[190px] rounded  xs:w-full tl:w-full">Subscribe</button> 
+            </div>
+            
+          </div>
+       <!-- .................................................................. -->
+          <section class="w-full bg-blue-700 relative flex justify-center gap-[50px] p-[100px] mt-[100px] xs:flex-col xs:items-start xs:pl-[50px] xs:mt-[0] tl:flex-col tl:items-start tl:pl-[50px] tl:mt-[0]">
+
+              <div class="flex flex-col gap-6  text-start">
+                <div class="flex flex-col gap-4">
+                  <h1 class="text-white text-2xl font-semibold">About Us</h1>
+                  <div class="bg-white h-[4px] w-[60px]"></div>
+                  <p class="w-[250px] text-white  text-wrap pt-7 xs:w-[550px] tl:w-[300px]">Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>    
+                </div>
+                <div class="flex gap-4">
+                  <button class="border rounded-full w-[30px] h-[30px] text-sm font-bold text-white hover:bg-white hover:text-blue-700"><a href="" >f</a></button>
+                  <button class="border rounded-full w-[30px] h-[30px] text-sm font-bold text-white hover:bg-white hover:text-blue-700"><a href="" >G+</a></button>
+                  <button class="border rounded-full w-[30px] h-[30px] text-sm font-bold text-white hover:bg-white hover:text-blue-700"><a href="" ><i class="fa-brands fa-twitter"></i></a></button>
+                  <button class="border rounded-full w-[30px] h-[30px] text-sm font-bold text-white hover:bg-white hover:text-blue-700"><a href="" ><i class="fa-brands fa-vimeo-v"></i></a></button>
+                  <button class="border rounded-full w-[30px] h-[30px] text-sm font-bold text-white hover:bg-white hover:text-blue-700"><a href=""><i class="fa-brands fa-paypal"></i></a></button>  
+                </div>             
+              </div>
+
+              <div class="text-white flex flex-col gap-[45px] items-start">
+
+                <div class="flex flex-col gap-4">
+                  <h1 class="text-white text-2xl font-semibold">Quick Links</h1>
+                  <div class="bg-white h-[4px] w-[60px]"></div>           
+                </div>
+
+                <div class="flex gap-8 tl:w-[300px]">
+                  <div class="flex flex-col gap-2">
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>Home</p>
+                    </div>
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>About Us</p>
+                    </div>
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>Services</p>
+                    </div>
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>Our Cases</p>
+                    </div>
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>Other Links</p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-2">
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>Consuling</p>
+                    </div>
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>Finance</p>
+                    </div>
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>Testimonials</p>
+                    </div>
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>FAQ</p>
+                    </div>
+                    <div class="flex gap-2 items-center transition-all ease-in-out duration-300 cursor-pointer hover:translate-x-3">
+                      <i class="fa-solid fa-caret-right"></i>
+                      <p>Contact Us</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-4 items-start ">
+                  <h1 class="text-white text-2xl font-semibold">Open Hours</h1>
+                  <div class="bg-white h-[4px] w-[60px]"></div>           
+                </div>
+                <div class="text-start flex flex-col gap-4">
+                  <p class="w-[250px] text-white  text-wrap pt-7 xs:w-[550px]  tl:w-[300px]">Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>    
+                  <div class="flex gap-8 text-white ">
+                    <div>
+                      <p>Monday - Fridayp</p>
+                      <p>Saturday</p>
+                      <p>Monday - Thusday</p>
+                    </div>
+                    <div>
+                      <p>8.00-20.00</p>
+                      <p>9.00-18.30</p>
+                      <p>9.00-15.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-11">
+                <div class="flex flex-col gap-4 items-start ">
+                  <h1 class="text-white text-2xl font-semibold">Newsletter</h1>
+                  <div class="bg-white h-[4px] w-[60px]"></div>           
+                </div>
+                <div class="flex flex-col gap-6">
+                  <p class="text-wrap text-start  w-[250px] text-white xs:w-[550px] tl:w-[300px]">subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                 <div class="flex">
+                  <div class="relative">
+                    <input type="email" class="bg-blue-700 border rounded w-[250px] h-[53px] pl-4  " placeholder="Your email address">
+                    <i class="absolute right-[0px]  fa-brands fa-telegram text-4xl  text-blue-500 bg-white p-2  rounded hover:text-black "></i>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            
+              <div class="bg-blue-400 absolute bottom-0 w-full h-[50px] text-white flex flex-col justify-center xs:right-0 tl:right-0">
+                <p>© Copyright 2018 | All Rights Reserved by wpthemesgrid.com</p>
+              </div>
+          </section>
+     
+    <button id="btn2" class="fixed bottom-5 right-5 bg-blue-600  text-white rounded border-none p-4  z-30 tl:fixed tl:bottom-5 tl:right-5">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M18 11l-6 -6" /><path d="M6 11l6 -6" /></svg>
+    </button>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    </body>
+</html>
